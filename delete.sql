@@ -1,0 +1,3 @@
+-- SQLite
+delete from Book 
+
