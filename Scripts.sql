@@ -61,3 +61,5 @@ create table Book
 
     insert into Book 
     VALUES(null,'Data structure and algorithm',2045 , 600 , 'II','987-0-1-04','science and technology',1,1);
+    insert into Book 
+    VALUES(null,'Programming in c++',2000 , 440 , 'I','98712-30-11-049','science and technology',1,2);
