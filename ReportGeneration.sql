@@ -31,4 +31,8 @@ ORDER BY published DESC;
 
 -- 3.4 Get all authors with comma separated list of books they have written
 -- solution:
+SELECT author.name, GROUP_CONCAT(book.title , ', ') AS Books
+FROM author
+JOIN book ON author.Id = book.AuthorId
+GROUP BY author.name;
 
