@@ -118,3 +118,15 @@ group by a.Name
 UPDATE Book
 SET AuthorId = '6'
 WHERE Id = 6;
+
+
+
+
+
+SELECT publication.name, COUNT(Book.Id) AS published from publication
+JOIN Book ON publication.Id = Book.publicationId
+GROUP BY publication.name
+ORDER BY published DESC;
+    
+
+

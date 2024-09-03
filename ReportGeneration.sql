@@ -22,7 +22,12 @@ where a.Name = 'Parijat'
 group by a.Name 
 
 -- 3.3 Get all publishers in descending order with number of books published so far
--- YOUR 
+-- solution:
+SELECT publication.name, COUNT(Book.Id) AS published from publication
+JOIN Book ON publication.Id = Book.publicationId
+GROUP BY publication.name
+ORDER BY published DESC;
+
 
 -- 3.4 Get all authors with comma separated list of books they have written
 -- YOUR 
