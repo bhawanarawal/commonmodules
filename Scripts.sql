@@ -128,5 +128,11 @@ JOIN Book ON publication.Id = Book.publicationId
 GROUP BY publication.name
 ORDER BY published DESC;
     
+SELECT Author.Name, GROUP_CONCAT(book.Title , ', ') AS books
+FROM Author
+INNER JOIN book ON Author.Id = book.id
+GROUP BY author.Name;
 
 
+DELETE FROM Author
+WHERE id = 2;
